@@ -2,7 +2,7 @@
 /*
     Welcome to your first dbt model!
     Did you know that you can also configure models directly within SQL files?
-    This will override configurations stated in dbt_project.yml - test
+    This will override configurations stated in dbt_project.yml - test - okay
 
     Try changing "table" to "view" below
 */
