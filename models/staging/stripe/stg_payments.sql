@@ -3,9 +3,9 @@ select
     orderid as order_id,
     paymentmethod as payment_method,
     status,
-
+    _batched_at as batched_time,
     -- amount is stored in cents, convert it to dollars
     amount / 100 as amount,
     created as created_at
 
-from raw.stripe.payment 
+from {{ source('stripe', 'payment') }} 
